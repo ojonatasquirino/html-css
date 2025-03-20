@@ -1,20 +1,68 @@
 <!-- Estrutura Básica do HTML da página -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+    <!-- Metadados da página -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
-    <!-- Exemplo de script no head (usualmente para scripts que não afetam o carregamento inicial da página) -->
-    <script src="./app/script.js"></script>
-</head>
-<body>
-    <!-- Conteúdo da página -->
-    <h1>Olá!</h1>
-    <p>Documento HTML estruturado!</p>
+    <meta name="description" content="Descrição breve sobre o conteúdo da página">
+    <meta name="author" content="Quirino">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Exemplo">
 
-    <!-- Exemplo de script no body (comumente usado para scripts que interagem diretamente com o conteúdo do body) -->
+    <!-- Título da página -->
+    <title>Título da Página</title>
+
+    <!-- Favicon da página -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Links para estilos CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Exemplo de script no head (usualmente para scripts assíncronos ou externos) -->
+    <script defer src="./app/script.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem-vindo ao meu site</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção principal -->
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Informações sobre a empresa ou o autor da página.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <p>Descrição dos serviços oferecidos.</p>
+        </section>
+    </main>
+
+    <!-- Barra lateral -->
+    <aside>
+        <h3>Conteúdo Adicional</h3>
+        <p>Links ou informações extras.</p>
+    </aside>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Exemplo de script no body (para interações com DOM) -->
     <script src="./app/script.js"></script>
 </body>
+
 </html>
